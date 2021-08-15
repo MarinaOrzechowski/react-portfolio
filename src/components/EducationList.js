@@ -2,61 +2,56 @@
 import EducationCard from './EducationCard';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import { Container } from '@material-ui/core';
+import ccnyImg from '../images/ccny.png';
+import kbccImg from '../images/kbcc.png';
 
 export default function EducationList() {
 
 
   let educations = [
     {
-        _id: 3,
-        eduName: "The City College of New York, CUNY.",
+        _id: 0,
+        eduName: ["The City College of New York,", <br />,"CUNY."],
         eduDegree: "BS in Computer Science",
         eduDate:"2018-2021",
         eduGPA:"3.92/4.0",
-        eduAwards: ["Grove School of Engineering Valedictorian nominee.", "Computer Science Achievement Award.", "Bank of America Code Week finalist."],
-        eduClubs: ["Secretary of Women in Computer Science club. Organized over 15 technical workshops (HTML/CSS, Python, Machine Learning) for high school and CCNY students. Informed over 150 CCNY students about tech/networking opportunities via weekly online newsletters."],
-        eduCourses:"Data Structures, Algorithms, Java, Python, Data visualization, Machine Learning, Big Data.",
-        eduDiploma:"",
-        eduClubsImg:""
+        eduAwards: ["Grove School of Engineering Valedictorian nominee.", "Computer Science Achievement Award."],
+        eduClubs: ["Secretary of Women in Computer Science club. Organized Python and Machine Learning workshops for high school and CCNY students. Informed over 150 students about tech opportunities via weekly online newsletters."],
+        eduClubsImg: ccnyImg
     },
       {
-        _id: 2,
+        _id: 1,
         eduName: "Kingsborough Community College, CUNY.",
         eduDegree: "AS in Computer Science.",
         eduDate: "2016-2018",
         eduGPA: "3.98/4.0",
         eduAwards: ["Kahn’s scholarship for engineering students."],
         eduClubs: ["Mu Alpha Theta - mathematics honor society for high school and two-year college students.", "Phi Theta Kappa - international honor society of two-year colleges and academic programs."],
-        eduCourses: "Advanced C++, MIPS Assembly language.",
-        eduDiploma:"",
-        eduClubsImg:""
+        eduClubsImg: kbccImg
     },
-    {
-        _id: 1,
-          eduName: "Kaliningrad State Technical University.",
-          eduDegree: "Specialist degree in Finance and Banking.",
-          eduDate: "2008-2013",
-          eduGPA: "5.0/5.0",
-          eduAwards:["The Success Formula Regional competition - second place. In a team of four developed a business plan for a chain of 'drogeri' stores."],
-          eduClubs: [],
-          eduCourses:"",
-          eduDiploma:"",
-          eduClubsImg:""
-      },
+    // {
+    //     _id: 1,
+    //       eduName: "Kaliningrad State Technical University.",
+    //       eduDegree: "Specialist degree in Finance and Banking.",
+    //       eduDate: "2008-2013",
+    //       eduGPA: "5.0/5.0",
+    //       eduAwards:["The Success Formula Regional competition - second place. In a team of four developed a business plan for a chain of 'drogeri' stores."],
+    //       eduClubs: [],
+    //       eduClubsImg:""
+    //   },
     
     ];
 
   let result = educations.map(edu => 
-    <Grid item key = {edu._id}>
-        <EducationCard 
+    <Grid item key = {edu._id} xs={12} lg={6}>
+        <EducationCard key = {edu._id}
           eduName = {edu.eduName} 
           eduDegree = {edu.eduDegree}
           eduDate = {edu.eduDate}
           eduGPA = {edu.eduGPA}
           eduAwards = {edu.eduAwards.map((award)=> <li>{award}</li>)}
           eduClubs = {edu.eduClubs.map((club)=><li>{club}</li>)}
-          eduCourses = {edu.eduCourses}
-          eduDiploma = {edu.eduDiploma} 
           eduClubsImg = {edu.eduClubsImg}
         >
         </EducationCard>
@@ -65,16 +60,17 @@ export default function EducationList() {
 
 
     return (
-        <div style={{ marginTop: 50, marginBottom: 100 }}>
+        <div>
           {
-            <Grid container alignItems="center" spacing={3} >
-              <Grid  item xs={11}>
-              <Typography align="center" variant="h4" gutterBottom>
+            <Container>
+              <Typography align="left" variant="h4" gutterBottom>
                 Education
               </Typography>
-              </Grid>         
+              <Grid container alignItems="center" spacing = {3}>
                 {result}
-            </Grid>
+              </Grid>
+            </Container>
+            
           }
         </div>  
 
