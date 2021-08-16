@@ -2,7 +2,6 @@
 import EducationCard from './EducationCard';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import { Container } from '@material-ui/core';
 import ccnyImg from '../images/ccny.png';
 import kbccImg from '../images/kbcc.png';
 
@@ -60,18 +59,14 @@ export default function EducationList() {
 
 
     return (
-        <div>
-          {
-            <Container>
-              <Typography align="left" variant="h4" gutterBottom>
+        <div style={{paddingTop: 40}}>
+              <Typography align="center" variant="h3" gutterBottom >
                 Education
               </Typography>
               <Grid container alignItems="center" spacing = {3}>
                 {result}
               </Grid>
-            </Container>
             
-          }
         </div>  
 
     );

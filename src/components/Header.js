@@ -7,7 +7,6 @@ import TextTransition, { presets } from "react-text-transition";
 import IconButton from '@material-ui/core/IconButton';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import { Container } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
 import Navbar from './Navbar';
 import styled from 'styled-components';
@@ -61,7 +60,6 @@ export default function Header() {
 
   return (
 
-      <Container>
       <Grid container >
           {/* my profile pic */}
           <Grid item xs={12} md={5} >
@@ -117,7 +115,6 @@ export default function Header() {
 
           </Grid>
         </Grid>
-      </Container>
 
 
   );

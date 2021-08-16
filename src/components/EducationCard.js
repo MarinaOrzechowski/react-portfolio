@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 
 const WhiteTextTypography = withStyles({
   root: {
-    color: "#FFFFFF"
+    color: "white"
   }
 })(Typography);
 
@@ -34,8 +34,8 @@ export default function EducationCard(props) {
     <Card className={classes.root} variant="outlined">
     
         <CardContent>
-        <Box bgcolor="#6f6c9e" p={1}>
-          <WhiteTextTypography align = "center" gutterBottom variant="h4" component="h2">
+        <Box bgcolor="#5faaa7" p={2}>
+          <WhiteTextTypography align = "center" gutterBottom variant="h4" component="h2" >
             {props.eduName}
           </WhiteTextTypography>
           <WhiteTextTypography variant="body1" color="textSecondary" >
