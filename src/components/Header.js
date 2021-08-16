@@ -34,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'block',
     maxWidth: '100%',
     maxHeight: '100%',
+    
   },
 }));
 
@@ -62,7 +63,7 @@ export default function Header() {
 
       <Grid container >
           {/* my profile pic */}
-          <Grid item xs={12} md={5} >
+          <Grid item xs={12} md={5} style={{backgroundColor:"#98989c"}}>
               <img className={classes.img} alt="complex" src={myPic} />
           </Grid>
           

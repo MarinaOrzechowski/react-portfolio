@@ -35,8 +35,8 @@ export default function ExperienceList() {
       workCompany: "Research Foundation of CUNY",
       workDates: "May 2020 - Oct 2020",
       workTitle: "Data Visualization Developer",
-      workDescription: ["Visualize socioeconomic data and reported gas leaks for NYC census tracts to predict potential areas with most gas leaks."],
-      workSkills: "Python (Pandas, NumPy, Geojson-Utils, Geopandas), Plotly, Dash, Mapbox."
+      workDescription: ["Built an interactive dashboard which shows correlations between socioeconomic data and reported gas leaks for NYC census tracts to predict potential areas with most gas leaks."],
+      workSkills: "Python, Pandas, NumPy, Geojson-Utils, Geopandas, Plotly, Dash, Mapbox, GitHub"
     },
     {
       _id:2,
@@ -54,7 +54,7 @@ export default function ExperienceList() {
       workDates: "Feb 2020 - May 2020",
       workTitle: "Peer Tutor",
       workDescription: ["Mentored students in Data Structures course by holding weekly office hours to answer questions on key concepts in a small group setting"],
-      workSkills: "Data Structures and Algorithms, C++, Python"
+      workSkills: "Data Structures and Algorithms, Python, GitHub"
     }
 
   ];
@@ -71,8 +71,14 @@ export default function ExperienceList() {
     )
 
   return (
+    <div style={{paddingTop: 40}}>
+      <Typography align="center" variant="h3" gutterBottom >
+        Experience
+      </Typography>
       <Timeline align="alternate">
         {result}
       </Timeline>
+    </div>
+    
   );
 }
