@@ -105,8 +105,6 @@ export default function Header() {
                   </Grid>  
                 </Box> 
 
-               
-                
                 <Grid item>
                   <Navbar />
                 </Grid>

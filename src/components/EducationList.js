@@ -2,11 +2,17 @@
 import EducationCard from './EducationCard';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import ccnyImg from '../images/ccny.png';
+import ccnyImg from '../images/CCNY.PNG';
 import kbccImg from '../images/kbcc.png';
+import { withStyles } from '@material-ui/core/styles';
+import { Box } from '@material-ui/core';
 
 export default function EducationList() {
-
+  const WhiteTextTypography = withStyles({
+    root: {
+      color: "white"
+    }
+  })(Typography);
 
   let educations = [
     {
@@ -60,12 +66,16 @@ export default function EducationList() {
 
     return (
         <div style={{paddingTop: 40}}>
-              <Typography align="center" variant="h3" gutterBottom >
-                Education
-              </Typography>
-              <Grid container alignItems="center" spacing = {3}>
-                {result}
-              </Grid>
+          <Box style={{backgroundColor: "#5faaa7", paddingTop: 40, paddingBottom:40}}>
+            <WhiteTextTypography align="center" variant="h3" gutterBottom >
+              Education
+            </WhiteTextTypography>
+          </Box>
+          <div style={{paddingTop:10}}>
+            <Grid container alignItems="center" spacing = {3}>
+              {result}
+            </Grid>
+          </div>
             
         </div>  
 

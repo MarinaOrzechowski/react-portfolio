@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import Timeline from '@material-ui/lab/Timeline';
 import Typography from '@material-ui/core/Typography';
 import work_cuny from '../images/work_cuny.jpg'
@@ -7,15 +7,14 @@ import work_mta from '../images/work_mta.jpg'
 import work_accenture from '../images/work_accenture.jpg'
 import work_rf from '../images/work_rf.png'
 import ExperienceCard from './ExperienceCard';
+import { Box } from '@material-ui/core';
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    padding: '6px 16px',
-  },
-  secondaryTail: {
-    backgroundColor: theme.palette.secondary.main,
-  },
-}));
+
+const WhiteTextTypography = withStyles({
+  root: {
+    color: "white"
+  }
+})(Typography);
 
 export default function ExperienceList() {
 
@@ -71,10 +70,12 @@ export default function ExperienceList() {
     )
 
   return (
-    <div style={{paddingTop: 40}}>
-      <Typography align="center" variant="h3" gutterBottom >
-        Experience
-      </Typography>
+    <div>
+      <Box style={{backgroundColor: "#066781", paddingTop: 40, paddingBottom:40}}>
+        <WhiteTextTypography align="center" variant="h3" gutterBottom >
+          Experience
+        </WhiteTextTypography>
+      </Box>
       <Timeline align="alternate">
         {result}
       </Timeline>

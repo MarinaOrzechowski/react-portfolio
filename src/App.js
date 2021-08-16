@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import EducationList from './components/EducationList';
 import ExperienceList from './components/ExperienceList';
+import CertificateList from './components/CertificateList';
 import { Container } from '@material-ui/core';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
    <Header />
    <ExperienceList />
    <EducationList />
+   <CertificateList />
    </Container>
   );
 }

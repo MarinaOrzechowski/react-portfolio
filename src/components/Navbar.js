@@ -13,10 +13,11 @@ const useStyles = makeStyles({
         position: 'flex',
         bottom: 0,
         width: '100%',
-        height: 132,
+        height: 133,
     },
     label: {
-        flexDirection: "column"
+        flexDirection: "column",
+        color: 'white'
       }
   });
 
@@ -34,7 +35,7 @@ export default function Navbar() {
             <Grid item container xs={3} style = {{backgroundColor: '#ff6334', justifyContent: 'center'}}>
                 <Button classes={{label: classes.label}}  startIcon={<ComputerIcon style={{ fontSize: 50 }}/>}>Projects</Button>
             </Grid>
-            <Grid item container xs={3} style = {{backgroundColor: '#ffdd1c', justifyContent: 'center'}}>
+            <Grid item container xs={3} style = {{backgroundColor: '#ffb400', justifyContent: 'center'}}>
                 <Button classes={{label: classes.label}}  startIcon={<DescriptionIcon style={{ fontSize: 50 }}/>}>Certificates</Button>
             </Grid> 
         </Grid>
