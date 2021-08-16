@@ -30,7 +30,7 @@ export default function Navbar() {
             
             <Grid item container xs={3} style = {{backgroundColor: '#066781', justifyContent: 'center'}}>
                 <Button classes={{label: classes.label}} 
-                        onClick={() => window.location.replace("/#experience")}
+                        onClick={() => window.location.replace("/react-portfolio/#experience")}
                         startIcon={<SchoolIcon style={{ fontSize: 50 }}/>}>
                             Experience
                 </Button>
@@ -40,21 +40,21 @@ export default function Navbar() {
             
             <Grid item container xs={3} style = {{backgroundColor: '#5faaa7', justifyContent: 'center'}}>
                 <Button classes={{label: classes.label}}
-                        onClick={() => window.location.replace("/#education")}  
+                        onClick={() => window.location.replace("/react-portfolio/#education")}  
                         startIcon={<SettingsIcon style={{ fontSize: 50 }}/>}>
                             Education
                 </Button>
             </Grid>
             <Grid item container xs={3} style = {{backgroundColor: '#ff6334', justifyContent: 'center'}}>
                 <Button classes={{label: classes.label}} 
-                        onClick={() => window.location.replace("/#projects")} 
+                        onClick={() => window.location.replace("/react-portfolio/#projects")} 
                         startIcon={<ComputerIcon style={{ fontSize: 50 }}/>}>
                             Projects
                 </Button>  
             </Grid>
             <Grid item container xs={3} style = {{backgroundColor: '#ffb400', justifyContent: 'center'}}>
                 <Button classes={{label: classes.label}}  
-                        onClick={() => window.location.replace("/#certificates")}
+                        onClick={() => window.location.replace("/react-portfolio/#certificates")}
                         startIcon={<DescriptionIcon style={{ fontSize: 50 }}/>}>
                             Certificates
                 </Button>
