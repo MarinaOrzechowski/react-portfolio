@@ -6,6 +6,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import ComputerIcon from '@material-ui/icons/Computer';
 import DescriptionIcon from '@material-ui/icons/Description';
 import { Grid } from '@material-ui/core';
+import {Link} from 'react-scroll'
 
 
 const useStyles = makeStyles({
@@ -26,17 +27,37 @@ export default function Navbar() {
   
     return (
         <Grid container classes={{root: classes.root}}>
+            
             <Grid item container xs={3} style = {{backgroundColor: '#066781', justifyContent: 'center'}}>
-                <Button classes={{label: classes.label}}  startIcon={<SchoolIcon style={{ fontSize: 50 }}/>}>Experience</Button>
+                <Button classes={{label: classes.label}} 
+                        onClick={() => window.location.replace("/#experience")}
+                        startIcon={<SchoolIcon style={{ fontSize: 50 }}/>}>
+                            Experience
+                </Button>
+                
             </Grid>
+            
+            
             <Grid item container xs={3} style = {{backgroundColor: '#5faaa7', justifyContent: 'center'}}>
-                <Button classes={{label: classes.label}}  startIcon={<SettingsIcon style={{ fontSize: 50 }}/>}>Education</Button>
+                <Button classes={{label: classes.label}}
+                        onClick={() => window.location.replace("/#education")}  
+                        startIcon={<SettingsIcon style={{ fontSize: 50 }}/>}>
+                            Education
+                </Button>
             </Grid>
             <Grid item container xs={3} style = {{backgroundColor: '#ff6334', justifyContent: 'center'}}>
-                <Button classes={{label: classes.label}}  startIcon={<ComputerIcon style={{ fontSize: 50 }}/>}>Projects</Button>
+                <Button classes={{label: classes.label}} 
+                        onClick={() => window.location.replace("/#projects")} 
+                        startIcon={<ComputerIcon style={{ fontSize: 50 }}/>}>
+                            Projects
+                </Button>  
             </Grid>
             <Grid item container xs={3} style = {{backgroundColor: '#ffb400', justifyContent: 'center'}}>
-                <Button classes={{label: classes.label}}  startIcon={<DescriptionIcon style={{ fontSize: 50 }}/>}>Certificates</Button>
+                <Button classes={{label: classes.label}}  
+                        onClick={() => window.location.replace("/#certificates")}
+                        startIcon={<DescriptionIcon style={{ fontSize: 50 }}/>}>
+                            Certificates
+                </Button>
             </Grid> 
         </Grid>
             

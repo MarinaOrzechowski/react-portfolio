@@ -12,6 +12,7 @@ import Navbar from './Navbar';
 import styled from 'styled-components';
 import { palette, spacing, typography } from '@material-ui/system';
 
+
 const Boxx = styled.div`${palette}${spacing}${typography}`;
 
 const useStyles = makeStyles((theme) => ({

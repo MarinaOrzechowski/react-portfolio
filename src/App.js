@@ -6,14 +6,15 @@ import CertificateList from './components/CertificateList';
 import ProjectsList from './components/ProjectList';
 import { Container } from '@material-ui/core';
 
+
 function App() {
   return (
     <Container>
-      <Header />
-      <ExperienceList />
-      <EducationList />
-      <ProjectsList />
-      <CertificateList />
+      <div id='about'> <Header /></div>
+      <div id='experience'> <ExperienceList /></div>
+      <div id='education'> <EducationList /> </div>
+      <div id='projects'> <ProjectsList /> </div>
+      <div id='certificates'> <CertificateList /> </div>
    </Container>
   );
 }
