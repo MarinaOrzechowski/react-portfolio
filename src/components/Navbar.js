@@ -6,8 +6,6 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import ComputerIcon from '@material-ui/icons/Computer';
 import DescriptionIcon from '@material-ui/icons/Description';
 import { Grid } from '@material-ui/core';
-import {Link} from 'react-scroll'
-
 
 const useStyles = makeStyles({
     root: {

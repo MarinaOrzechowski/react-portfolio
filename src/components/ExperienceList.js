@@ -71,7 +71,7 @@ export default function ExperienceList() {
 
   return (
     <div>
-      <Box style={{backgroundColor: "#066781", paddingTop: 40, paddingBottom:40}}>
+      <Box xs={12} style={{backgroundColor: "#066781", paddingTop: 40, paddingBottom:40}}>
         <WhiteTextTypography align="center" variant="h3" gutterBottom >
           Experience
         </WhiteTextTypography>

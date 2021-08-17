@@ -66,7 +66,7 @@ export default function EducationList() {
 
     return (
         <div style={{paddingTop: 40}}>
-          <Box style={{backgroundColor: "#5faaa7", paddingTop: 40, paddingBottom:40}}>
+          <Box  xs={12}  style={{backgroundColor: "#5faaa7", paddingTop: 40, paddingBottom:40}}>
             <WhiteTextTypography align="center" variant="h3" gutterBottom >
               Education
             </WhiteTextTypography>

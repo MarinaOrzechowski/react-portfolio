@@ -24,13 +24,9 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     maxWidth: 1500,
   },
-  image: {
-    width: 512,
-    height: 512,
-  },
   img: {
-    width: 512,
-    height: 512,
+    // width: 512,
+    // height: 512,
     margin: 'auto',
     display: 'block',
     maxWidth: '100%',
