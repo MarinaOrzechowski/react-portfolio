@@ -60,7 +60,7 @@ export default function CertificateList() {
 
     return (
         <div style={{paddingTop: 40}}>
-          <Box style={{backgroundColor: "#ffb400", paddingTop: 40, paddingBottom:40}}>
+          <Box  xs={12} style={{backgroundColor: "#ffb400", paddingTop: 40, paddingBottom:40}}>
             <WhiteTextTypography align="center" variant="h3"  >
               Certificates
             </WhiteTextTypography>

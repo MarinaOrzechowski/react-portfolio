@@ -104,7 +104,7 @@ export default function ProjectsList() {
 
     return (
         <div style={{paddingTop: 40}}>
-          <Box style={{backgroundColor: "#ff6334", paddingTop: 40, paddingBottom:40}}>
+          <Box  xs={12} style={{backgroundColor: "#ff6334", paddingTop: 40, paddingBottom:40}}>
             <WhiteTextTypography align="center" variant="h3"  >
               Projects
             </WhiteTextTypography>             

@@ -8,9 +8,10 @@ import { Container } from '@material-ui/core';
 
 
 function App() {
+  
   return (
     <Container>
-      <div id='about'> <Header /></div>
+      <Header />
       <div id='experience'> <ExperienceList /></div>
       <div id='education'> <EducationList /> </div>
       <div id='projects'> <ProjectsList /> </div>
