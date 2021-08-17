@@ -26,11 +26,13 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     // width: 512,
-    // height: 512,
+    height: 512,
     margin: 'auto',
     display: 'block',
     maxWidth: '100%',
     maxHeight: '100%',
+    minWidgh: '100%',
+    minHeight:'100%'
     
   },
 }));
@@ -82,7 +84,7 @@ export default function Header() {
                   <Grid container direction="row" >
                     <Grid item>
                       <Typography gutterBottom style={{color: '#FFFFFF'}}>
-                        <Boxx py={{ xs: 2, s: 3, md:5, lg:8 }} fontWeight="fontWeightLight" fontSize={70} fontFamily="Calibri ">Marina Orzechowski</Boxx>
+                        <Boxx py={{ xs: 2, s: 3, md:6, lg:8 }} fontWeight="fontWeightLight" fontSize={70} fontFamily="Calibri ">Marina Orzechowski</Boxx>
                         
                       </Typography>
                     </Grid>  
