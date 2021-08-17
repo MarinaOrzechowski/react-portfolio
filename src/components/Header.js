@@ -62,12 +62,12 @@ export default function Header() {
 
       <Grid container >
           {/* my profile pic */}
-          <Grid item xs={12} md={4} style={{backgroundColor:"#98989c"}}>
+          <Grid item xs={12} md={5} style={{backgroundColor:"#98989c"}}>
               <img className={classes.img} alt="complex" src={myPic} />
           </Grid>
           
 
-          <Grid item xs={12} md={8} style={{ height: '100%'}}>
+          <Grid item xs={12} md={7} style={{ height: '100%'}}>
             
             {/* my name */}
             <Grid container direction="column"  >
