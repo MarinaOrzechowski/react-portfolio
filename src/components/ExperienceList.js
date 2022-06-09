@@ -25,8 +25,8 @@ export default function ExperienceList() {
       workCompany: "Accenture",
       workDates: "Jul 2021 - Present",
       workTitle: "Advanced App Engineering Analyst",
-      workDescription: ["Use modular architectures, next-generation techniques, cloud-first and mobile-first mindset to provide vision to App Development Teams."],
-      workSkills: "Agile, AWS"
+      workDescription: ["Worked in a Deployment Automation team as a Python developer to support migration of Artifactory, Bitbucket, and Docker assets to AWS. Wrote bash scripts for applications deployment automation which were executed by CodeDeploy agent on the Linux servers."],
+      workSkills: "Agile, AWS, Python"
     },
     {
       _id:1,
