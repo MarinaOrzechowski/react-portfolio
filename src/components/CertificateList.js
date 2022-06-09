@@ -8,6 +8,7 @@ import awsCert from '../images/aws.JPG';
 import udacityCert from '../images/udacityDL.JPG';
 import codepathCert from '../images/CodePath.JPG';
 import ctpCert from "../images/CTP.JPG";
+import oracleCert from "../images/oracleCert.png";
 
 
 export default function CertificateList() {
@@ -43,6 +44,12 @@ export default function CertificateList() {
         certName: "CUNY Tech Prep - Web Development and Data Science",
         certImg: ctpCert,
         certDescription:"Was selected for a technical training program, as one of 125 students out of 400+ applicants. Learned how to work with data and machine learning algorithms from scikit-learn as well as how to visualize data using matplotlib and seaborn. Learned basics of MERN full stack development."
+    },
+    {
+      _id: 4,
+      certName: "Oracle Certified Associate - Java SE 8 Programmer",
+      certImg: oracleCert,
+      certDescription:"Earners of this certification have built a foundational understanding of Java."
     },
     ];
 
