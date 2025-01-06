@@ -41,7 +41,7 @@ export default function ExperienceList() {
       workDates: "Jul 2021 - Jul 2022",
       workTitle: "Advanced App Engineering Analyst",
       workDescription: ["Worked as an Automation Engineer in the Deployment Automation team, where I developed Python scripts to support migration of assets to AWS. Wrote Bash scripts to automate application deployments, which were executed by the CodeDeploy agent on Linux servers."],
-      workSkills: "Python, Bash,  AWS"
+      workSkills: "Python, Bash, AWS"
     },
     {
       _id:1,
