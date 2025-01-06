@@ -23,10 +23,25 @@ export default function ExperienceList() {
       _id:0,
       workImg: work_accenture,
       workCompany: "Accenture",
-      workDates: "Jul 2021 - Present",
+      workDates: "Jul 2022 - Dec 2024",
+      workTitle: "Custom Software Engineering Senior Analyst",
+      workDescription: [
+        "Led a team of four Python developers. Ran daily 'Dev Connect' meetings, mentored junior engineers, reviewed all pull requests for the team, collaborated with other teams on features.",
+        "Built and maintained REST and GraphQL APIs to enable a seamless customer checkout process. Leveraged serverless and event-driven architectures utilizing Serverless Framework, AWS Lambda, S3, DynamoDB, SQS, API Gateway, etc.",
+        "Supported production deployments, oversaw release builds, monitored logs  post-deployment, and quickly addressed incidents with hotfixes.",
+        "Developed Python scripts to automate complex tasks, which reduced reliance on manual operations within the AWS Console and enabled the QA team to complete tasks without dev support. Developed scripts for complex analysis of CloudWatch logs.",
+        "Recognized for being ‘proactive, detail oriented, excellent in support and team leadership, delivering an amazing amount of work while supporting the team, and resolving defects and open issues quickly.’"
+      ],
+      workSkills: "Python, Serverless Framework, AWS (Lambda, S3, DynamoDB, SQS, API Gateway, etc.), FastAPI, GraphQL"
+    },
+    {
+      _id:0,
+      workImg: work_accenture,
+      workCompany: "Accenture",
+      workDates: "Jul 2021 - Jul 2022",
       workTitle: "Advanced App Engineering Analyst",
-      workDescription: ["Use modular architectures, next-generation techniques, cloud-first and mobile-first mindset to provide vision to App Development Teams."],
-      workSkills: "Agile, AWS"
+      workDescription: ["Worked as an Automation Engineer in the Deployment Automation team, where I developed Python scripts to support migration of assets to AWS. Wrote Bash scripts to automate application deployments, which were executed by the CodeDeploy agent on Linux servers."],
+      workSkills: "Python, Bash,  AWS"
     },
     {
       _id:1,

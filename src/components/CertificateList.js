@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core';
 import awsCert from '../images/aws.JPG';
+import awsCertDev from '../images/aws_dev.JPG';
 import udacityCert from '../images/udacityDL.JPG';
 import codepathCert from '../images/CodePath.JPG';
 import ctpCert from "../images/CTP.JPG";
@@ -20,8 +21,14 @@ export default function CertificateList() {
 
   let certificates = [
     {
+      _id: 0,
+      certName: "AWS Certified Developer - Associate",
+      certImg: awsCertDev,
+      certDescription: "Earners of this certification showcase skills and knowledge in developing, optimizing, packaging, and deploying applications, using CI/CD workflows, and identifying and resolving application issues. "
+    },
+    {
         _id: 0,
-        certName: "AWS Solutions Architect - Associate",
+        certName: "AWS Certified Solutions Architect - Associate",
         certImg: awsCert,
         certDescription: "Earners of this certification have a comprehensive understanding of AWS services and technologies. They demonstrated the ability to build secure and robust solutions using architectural design principles based on customer requirements. Badge owners are able to strategically design well-architected distributed systems that are scalable, resilient, efficient, and fault-tolerant."
     },
