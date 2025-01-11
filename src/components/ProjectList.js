@@ -35,7 +35,7 @@ export default function ProjectsList() {
         _id: 1,
         projName: "NYC Reported Gas Leaks",
         projTech: "Python, Pandas, Dash, Plotly, GitHub, PythonAnywhere.",
-        projLink: "http://nycgasleaks.pythonanywhere.com/",
+        projLink: "https://nyc-gas-leaks-visualization-0198c1ba032e.herokuapp.com/",
         projGit: "https://github.com/MarinaOrzechowski/GasLeakConEd",
         projReport: null,
         projDemo: glDemo,
