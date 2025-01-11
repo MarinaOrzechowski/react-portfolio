@@ -42,8 +42,8 @@ export default function Header() {
   const classes = useStyles();
 
   const TEXTS = [
-    "Advanced App Engineering Analyst",
-    "Florham Park, NJ",
+    "Software Engineer",
+    "Ashburn, VA",
     "Curios, determined, kind :)"
   ];
 
