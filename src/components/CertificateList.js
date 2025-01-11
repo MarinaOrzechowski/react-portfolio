@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core';
 import awsCert from '../images/aws.JPG';
-import awsCertDev from '../images/aws_dev.JPG';
+import awsCertDev from '../images/aws_dev.jpg';
 import udacityCert from '../images/udacityDL.JPG';
 import codepathCert from '../images/CodePath.JPG';
 import ctpCert from "../images/CTP.JPG";
